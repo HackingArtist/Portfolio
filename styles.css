@@ -109,6 +109,19 @@ background-color:cornsilk;
 }
 
 
+
+#FdVideo{
+    
+    border: rgb(45, 45, 45) 0.1em;
+    width: 100%;
+    border-radius: 0.5em;
+
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
 /* Body content */
 
 .subheading {
@@ -209,7 +222,7 @@ text {
     border-color: #fff;
     border-width: 1px;
     background:#fff;
-   transition: top 0.3s, left 0.3s, transform 0.3s;
+   transition: transform 0.3s;
    /* opacity: 0.3; */
    transition-timing-function:ease-out;
     mix-blend-mode: difference;
@@ -241,3 +254,4 @@ img:hover >.cursor  {
 .container{
  margin-top: 2em;   
 }
+
