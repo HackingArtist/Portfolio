@@ -1,4 +1,6 @@
- 
+html{
+    scroll-behavior: smooth;
+}
 body{
      cursor:none; 
      /* pointer-events: none; */
@@ -73,17 +75,23 @@ body{
     
 }
 
+.nav-link{ text-decoration: none;}
 
-
-.nav-link-ash{
-    text-decoration: underline solid transparent;
-    transition: text-decoration 0.5s ease;
+.link-ash{
+ 
+  
+    transition: font-style 0.5s ease;
 
 }
 
- .nav-link-ash:hover{
+ .link-ash:hover{
     /* text-decoration: underline solid currentColor; */
-    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+   
+   
 }   
 .intro-text{
     padding-top:12px ;
@@ -253,5 +261,66 @@ img:hover >.cursor  {
 }
 .container{
  margin-top: 2em;   
+}
+
+
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+.past-logos{
+    padding-top: 2rem;
+}
+
+  .logo {
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logo:before,
+  .logo:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logo:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #121212);
+  }
+  
+  .logo:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),#121212);
+  }
+  
+  .logo:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logo-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+
+.logo-slide img {
+    height: 2rem;
+    margin: 1.25rem;
 }
 
