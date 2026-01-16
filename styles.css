@@ -1,3 +1,14 @@
+/* Spacing Scale */
+:root {
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 4.5rem;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -55,21 +66,28 @@ body{
     text-decoration: underline;
     fill: aqua;
 }
+h1 {
+    font-family: dm sans;
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .head-ash{
     font-family: dm sans;
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 600;
 }
 .ash-italic{
     font-family:'Times New Roman', Times, serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-style: italic;
     color: white;   
     
 }
 .ash-italic-1{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: italic;
     color: white;   
     
@@ -88,13 +106,13 @@ body{
     /* text-decoration: underline solid currentColor; */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.3;
    
    
 }   
 .intro-text{
-    padding-top:12px ;
+    padding-top: 0.75rem;
     line-height: 2rem;}
 
 
@@ -104,7 +122,7 @@ body{
     padding: 3% 10%;
 } */
 .navbar{
-    padding-bottom: 4%;
+    padding-bottom: 3rem;
 }
 .badge{
     padding-bottom: 2rem;
@@ -126,6 +144,14 @@ background-color:cornsilk;
 
 }
 
+#SentientVideo{
+    
+    border: rgb(45, 45, 45) 0.1em;
+    width: 100%;
+    border-radius: 0.5em;
+
+}
+
 ul li {
     margin-bottom: 0.5rem;
 }
@@ -133,24 +159,26 @@ ul li {
 /* Body content */
 
 .subheading {
-    font-size: 16px;
-     padding-top: 16px;
-     letter-spacing: 1px;
-     opacity: 0.8;
-     padding-bottom: 16px;
+    font-size: 1rem;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    padding-bottom: 1rem;
 }
 .card-title-ash{
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 0;
 }
 .thumb-tags{
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 8px 8px 8px 0px;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
 }
 .card-text-ash{
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 1.25rem;
+    line-height: 1.6;
 }
 
 .img-hover-zoom {
@@ -247,7 +275,7 @@ img:hover >.cursor  {
  
 /* footer */
 .foot-rule{
-    margin-top: 72px;
+    margin-top: 4.5rem;
     border-color: #fff;
     background-color: #fff;
     color:#fff;
@@ -260,7 +288,7 @@ img:hover >.cursor  {
 
 }
 .container{
- margin-top: 2em;   
+ margin-top: 2rem;   
 }
 
 
@@ -322,5 +350,97 @@ img:hover >.cursor  {
 .logo-slide img {
     height: 2rem;
     margin: 1.25rem;
+}
+
+/* Utility Classes */
+.bg-dark-card {
+    background-color: #121212 !important;
+}
+
+.card.bg-dark-card {
+    background-color: #121212 !important;
+}
+
+.card.border-0.bg-dark-card {
+    background-color: #121212 !important;
+}
+
+.card-padding-right {
+    padding-right: 1.25rem;
+}
+
+.card-padding-left {
+    padding-left: 1.25rem;
+}
+
+.card-body-no-padding {
+    padding-left: 0;
+}
+
+.section-padding-top {
+    padding-top: 2rem;
+}
+
+.row-padding-bottom {
+    padding-bottom: 4rem;
+}
+
+.row-padding-top {
+    padding-top: 3.75rem;
+}
+
+.section-margin-top {
+    margin-top: 3rem;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link-white {
+    color: #fff;
+}
+
+.img-margin-bottom {
+    margin-bottom: 1.5rem;
+}
+
+.img-margin-top-bottom {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-reach-out {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
+}
+
+
+.btn-reach-out:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-link-ash {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    position: relative; /* Ensure it works with stretched-link */
+    z-index: 1;
+}
+
+.card-link-ash:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
